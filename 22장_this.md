@@ -15,21 +15,6 @@ const circle = {
 console.log(circle.getDiameter()); // 10
 ```
 
-```
-/ 생성자 함수
-function Circle(radius) {
- // this는 생성자 함수가 생성할 인스턴스를 가리킨다.
- this.radius = radius;
-}
-Circle.prototype.getDiameter = function () {
- // this는 생성자 함수가 생성할 인스턴스를 가리킨다.
- return 2 * this.radius;
-};
-// 인스턴스 생성
-const circle = new Circle(5);
-console.log(circle.getDiameter()); // 10
-```
-
 자바스크립의 this는 함수가 호출되는 방식에 따라 this에 바인딩될 값, 즉 this 바인딩이 동적으로 결정된다.
 
 ```
