@@ -15,7 +15,7 @@ const circle = {
 console.log(circle.getDiameter()); // 10
 ```
 
-자바스크립의 this는 함수가 호출되는 방식에 따라 this에 바인딩될 값, 즉 this 바인딩이 동적으로 결정된다.
+자바스크립의 this는 ```함수가 호출되는 방식```에 따라 this에 바인딩될 값, 즉 this 바인딩이 동적으로 결정된다.
 
 ```
 // this는 어디서든지 참조 가능하다.
@@ -47,7 +47,7 @@ const me = new Person('Lee');
 strict mode :  https://beomy.tistory.com/13
 
 
-### 함수 호출 방식
+## 함수 호출 방식
 
 1. 일반 함수 호출
 2. 메서드 호출
@@ -81,7 +81,7 @@ foo.apply(bar); // bar
 foo.bind(bar)(); // bar
 ```
 
-#### 일반 함수 호출
+### 일반 함수 호출
 
 기본적으로 this에는 전역 객체global object가 바인딩된다. 
 
@@ -166,7 +166,7 @@ obj.foo();
  
  
  
- #### 메서드 호출
+ ### 메서드 호출
  
  메서드 내부의 this는 메서드를 소유한 객체가 아닌 메서드를 호출한 객체에 바인딩된다는 것을 유의하자
 
@@ -185,7 +185,7 @@ console.log(person.getName()); // Lee
 프로토타입 메서드 내부에서 사용된 this도 일반 메서드와 마찬가지로 해당 메서드를 호출한 객체에 바인딩 된다.
 
 
-#### 생성자 함수 호출
+### 생성자 함수 호출
 생성자 함수 내부의 this에는 생성자 함수가 (미래에) 생성할 인스턴스가 바인딩된다.
 일반 함수와 동일한 방법으로 생성자 함수를 정의하고 new 연산자와 함께 호출하면 해당 함수는 생성자 함수로 동작한다.
 대문자로 사용해야 한다!
@@ -207,7 +207,7 @@ console.log(circle1.getDiameter()); // 10
 console.log(circle2.getDiameter()); // 20
 ```
 
-#### Function.prototype.apply/call/bind 메서드에 의한 간접 호출 
+### Function.prototype.apply/call/bind 메서드에 의한 간접 호출 
 
 apply, call, bind 메서드는 Function.prototype의 메서드
 
