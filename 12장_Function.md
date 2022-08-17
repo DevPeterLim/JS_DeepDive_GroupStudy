@@ -56,6 +56,17 @@ console.log(result); // 7
 
 ## 3. 함수 리터럴
 
+### 리터럴?
+
+- 리터럴은 값을 표현하는 방식
+
+```javascript
+숫자 : 3
+문자 : "hello"
+참 / 거짓 : true
+함수 : function () {}
+```
+
 - JavaScript의 `함수는 객체 타입의 값`
 - `함수 리터럴 === 함수 표현식`
 
